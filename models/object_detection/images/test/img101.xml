@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>img101.jpg</filename>
+	<path>C:\tensorflow1\models\images\test\img101.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>722</width>
+		<height>432</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pork</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>326</xmin>
+			<ymin>8</ymin>
+			<xmax>679</xmax>
+			<ymax>309</ymax>
+		</bndbox>
+	</object>
+</annotation>

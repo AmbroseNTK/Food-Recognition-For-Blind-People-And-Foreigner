@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>img68.jpg</filename>
+	<path>C:\tensorflow1\models\images\train\img68.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>750</width>
+		<height>502</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>beef</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>534</xmin>
+			<ymin>240</ymin>
+			<xmax>643</xmax>
+			<ymax>302</ymax>
+		</bndbox>
+	</object>
+</annotation>

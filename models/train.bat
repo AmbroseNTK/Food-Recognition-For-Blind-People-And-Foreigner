@@ -1,0 +1,1 @@
+python train.py --logtostderr --train_dir=object_detection/training/ --pipeline_config_path=object_detection/training/ssd_mobilenet_v2_coco.config

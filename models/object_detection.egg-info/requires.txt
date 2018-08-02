@@ -1,0 +1,3 @@
+Pillow>=1.0
+Matplotlib>=2.1
+Cython>=0.28.1
