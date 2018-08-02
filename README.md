@@ -1,4 +1,4 @@
-![Title](\img\JMLC2018-title.png)
+![Title](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/JMLC2018-title.png)
 <h1>
 Food Recognition For Blind People And Foreigner
 </h1>
