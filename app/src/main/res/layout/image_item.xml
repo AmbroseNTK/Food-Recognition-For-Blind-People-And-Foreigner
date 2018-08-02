@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+<ImageView
+    android:layout_width="200dp"
+    android:layout_height="150dp"
+    android:id="@+id/imgSample"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    android:scaleType="fitCenter"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    />
+</LinearLayout>

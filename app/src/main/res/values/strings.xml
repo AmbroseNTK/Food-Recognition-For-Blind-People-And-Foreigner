@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Food Inspector</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_profile">Profile</string>
+</resources>

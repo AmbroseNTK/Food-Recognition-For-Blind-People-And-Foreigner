@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:background="@color/gray50">
+    <TableRow android:background="@color/amber900">
+        <TextView android:text="Result"
+            android:id="@+id/textResult"
+            android:textSize="10pt"
+            android:textColor="@color/gray50"
+            android:layout_margin="10dp"
+            android:layout_column="0"/>
+    </TableRow>
+    <TableRow android:background="@color/amber900">
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/progressConfidence"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            app:progress_text_color="@color/gray50"
+            app:progress_max="100"
+            app:progress_reached_color="@color/gray50"
+            app:progress_unreached_color="@color/amber900"
+            app:progress_text_size="10pt"
+
+            />
+    </TableRow>
+    <TableRow>
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandableLayout"
+            android:layout_height="wrap_content"
+            app:el_duration="1000"
+            app:el_expanded="true"
+            app:el_parallax="0.5"
+            android:background="@color/amber100">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textQuestion1"
+                        android:text="Does your image like these samples?"
+                        android:textSize="7pt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/amber900"
+                        android:layout_margin="10dp"
+                        android:layout_column="0"/>
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:id="@+id/lvSample"
+                        android:layout_above="@id/btOK"
+                        android:layout_below="@id/textQuestion1"/>
+                    <Button
+                        android:id="@+id/btOK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amber700"
+                        android:elevation="10dp"
+                        android:text="Yes"
+                        android:layout_above="@id/btAgain"/>
+
+                    <Button
+                        android:id="@+id/btAgain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amber700"
+                        android:elevation="10dp"
+                        android:text="No, try again"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"/>
+                </RelativeLayout>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+    </TableRow>
+    <TableRow>
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/infoLayout"
+            app:el_expanded="false"
+            android:elevation="10dp"
+            app:el_duration="1000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Original"
+                        android:textColor="@color/amber900"
+                        android:background="@color/amber100"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:id="@+id/tvOriginal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="original..."
+                        android:textColor="@color/amber900"
+                        android:background="@color/gray50"
+                        android:layout_marginBottom="10dp"
+                        android:maxLines="10"
+                        android:scrollHorizontally="false"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textColor="@color/amber900"
+                        android:background="@color/amber100"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:text="description..."
+                        android:textColor="@color/amber900"
+                        android:background="@color/gray50"
+                        android:layout_marginBottom="10dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Taste"
+                        android:textColor="@color/amber900"
+                        android:background="@color/amber100"
+                        android:layout_marginBottom="10dp"/>
+                    <lecho.lib.hellocharts.view.PieChartView
+                        android:id="@+id/tasteChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nutrition"
+                        android:textColor="@color/amber900"
+                        android:background="@color/amber100"
+                        android:layout_marginBottom="10dp"/>
+                    <lecho.lib.hellocharts.view.PieChartView
+                        android:id="@+id/chartNutrition"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </TableRow>
+</TableLayout>
+</android.support.constraint.ConstraintLayout>

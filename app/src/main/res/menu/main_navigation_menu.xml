@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/setting"
+        android:title="@string/menu_setting"
+        android:icon="@drawable/ic_settings"/>
+    <item android:id="@+id/menu_myprofile"
+        android:title="@string/menu_profile"
+        android:icon="@drawable/ic_account_circle"/>
+</menu>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "103335380624",
+    "firebase_url": "https://foodrecognition-ae536.firebaseio.com",
+    "project_id": "foodrecognition-ae536",
+    "storage_bucket": "foodrecognition-ae536.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103335380624:android:0a12cd0b9fdcb95c",
+        "android_client_info": {
+          "package_name": "ntk.ambrose.foodinspector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103335380624-m0prbdf2s266ae4ark99q3bh2dbv8far.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ntk.ambrose.foodinspector",
+            "certificate_hash": "31a3133dea79c0fe7e049b864a18ec92b80b2a0e"
+          }
+        },
+        {
+          "client_id": "103335380624-bfevh8v97ls76cs4vm963ku17k7aoi7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfX7nTuWhJNaoWmaoZEcv4DolBv_m8btk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103335380624-bfevh8v97ls76cs4vm963ku17k7aoi7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

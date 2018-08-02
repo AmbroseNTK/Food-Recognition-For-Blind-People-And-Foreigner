@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TableLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:background="@color/gray50">
+    <TableRow>
+        <TextView android:text="Content manager"
+            android:textSize="15pt"
+            android:textColor="@color/amber900"/>
+    </TableRow>
+    <TableRow>
+            <TextView
+                android:textColor="@color/amber900"
+                android:text="Model version:"
+                android:textSize="10pt"/>
+            <TextView
+                android:textColor="@color/amber700"
+                android:id="@+id/tvModelVersion"
+                android:text="0.0.0"
+                android:textSize="10pt"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textColor="@color/amber900"
+            android:text="Content version:"
+            android:textSize="10pt"/>
+        <TextView
+            android:textColor="@color/amber700"
+            android:id="@+id/tvContentVersion"
+            android:text="0.0.0"
+            android:textSize="10pt"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:background="@color/amber900"
+            android:id="@+id/btUpdate"
+            android:text="Update"
+            android:textColor="@color/gray50"
+            android:layout_span="2"
+            android:elevation="20dp"/>
+    </TableRow>
+</TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Open source project available on GitHub by Ambrose Nguyen Tuan Kiet"
+        android:layout_above="@id/btDone"
+        android:textColor="@color/amber900"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btDone"
+        android:text="Done"
+        android:textColor="@color/gray50"
+        android:background="@color/amber900"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
