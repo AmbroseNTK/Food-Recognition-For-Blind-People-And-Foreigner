@@ -1,0 +1,1 @@
+python label_image.py --image="./test_bunbo.jpg" --graph="model/vietnamese_dishes/graph.pb" --label="model/vietnamese_dishes/labels.txt" --input_layer=Placeholder --output_layer=final_result --input_width=224 --input_height=224

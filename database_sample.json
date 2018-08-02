@@ -1,0 +1,22 @@
+{
+    "Rice":{
+        "name":"",
+        "description":"",
+        "orginal":"",
+        "nutrition":{
+            "protein":0,
+            "carbonhydrate":0,
+            "fibre":0,
+            "vitamin":{},
+            "fat":0
+        },
+        "taste":{
+            "sweetness":0,
+            "saltiness":0,
+            "bitterness":0,
+            "sourness":0,
+            "spice":0
+        },
+        "img":""
+    }
+}
