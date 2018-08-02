@@ -63,3 +63,16 @@ Day | Date | What I did
 11 | Aug 1, 2018 | I used Google Cloud Platform, I created two Virtual Machine, one at Japan and the other at Taiwan. The VM at Taiwan had large CPU and Memory (vCPU: 8, Memory: 52GB) so it was a little bit faster than my laptop.
 12 | Aug 2, 2018 | I returned to my laptop. Installed tensorflow-gpu and tried to use my GPU card NVIDIA GT 740M. I trained on my laptop and it was the fastest (about 1 second per training step). After 2 hours, my GPU card was broken down, I could not use it after.
 </p>
+
+<h2>
+Methodology
+</h2>
+<p>
+After researched machine learning and implemented libraries, I refer to use TensorFlow with Python programming language and Java/Android for my mobile app. Nowaday, I suppose that TensorFlow is one of the best frameworks for Machine Learning and also Deep Learning. Moreover, TensorFlow had large developer community which ready to help me when I go to problems.</br>
+Project has 3 parts:</br>
++Food Recognition: It is a model to recognize food in a photo in summary. In my case, it returns result like Bun, Pho, Com, Banh-mi etc. I have downloaded above 600 photo per food on Google Image. After that, I have deleted unneccesary images and just keep correct images. I used these images to train the model. It was complete with 77% accurancy.
++Ingredient Detection: According to result which I have after applied Food Recognition model I use ingredient Detection model to detect ingredient in food one by one, so that I can calculate its nutrition, predict its taste. Because of kind variation of food, each food has Ingredient Detection model differently. For example, Pho is a popular food in Vietnam, and its ingredient change its nutrition a lot.
+![phobo](https://znews-photo-td.zadn.vn/w660/Uploaded/Ohunoaa/2016_12_22/8.jpg)
+![phoga](http://giadinh.mediacdn.vn/zoom/655_361/2014/7-1412602058-tu-lam-pho-ga-7-1412654910607-crop-1412654928337.jpg)
+The first photo is Pho-bo means Pho with beef. The second is Pho-ga means Pho with chicken. All of them is Pho, but they have different ingredient. Because of nutrition difference of beef and chicken, so Pho-bo and Pho-ga have different nutrition. So Ingredient Detection is an important step to solve this problem which is common in anothor food's culture.
+</p>
