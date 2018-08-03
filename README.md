@@ -324,6 +324,9 @@ Photo | Target | Output | Result
 
 * Ingredient Detection: Because I do not have enough photo (just 100 photos) so model still has low accurancy.
 ![test_ingredientDetection1](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_object_detection1.PNG)
+Here is graphs
+
+![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/GraphIngredientDetection.PNG)
 
 </p>
 
