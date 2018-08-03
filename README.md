@@ -5,11 +5,8 @@ Food Recognition For Blind People And Foreigner
 <h2>
 Content
 </h2>
-
-.. contents:: :local:
-
 <p>
-1. About me
+1. [About me](#about)
 2. What is it?
 3. Why?
 4. My Plan
@@ -20,20 +17,16 @@ Content
 9. Summary
 10. Reference
 </p>
-
-1. About me
-===========
-
+<h2>
+## 1. About me <a name="about"></a>
+</h2>
 <p>
 
 Welcome to my MLC GitHub page. My name is ***Kiet Nguyen Tuan (Ambrose)*** . I worte these lines when I was a senior student at ***Hoasen University, Vietnam***. Because of special love with Machine Learning, so I have come to this ML Camp hosted at Jeju National University to do my project. I also want to meet new friends from other countries. It was a experiement I never forget.
 </p>
 
 <h2>
-
 2. What is it?
-==============
-
 </h2>
 <p>
 
@@ -41,10 +34,7 @@ In this project, I would like to develop a collection of model that can use to r
 </p>
 
 <h2>
-
 3. Why?
-=======
-
 </h2>
 <p>
 When I found a idea for this camp, I realised that food is an important part of country's culture so that every people should have knowledge about food of place where they stay at. Moreover, disable people, specially blind people also need help to know what food they eat. For foreigner, I will be an useful food's guideline at place their visit and also be an assitant to track what their eat and suggest what they should or should not eat.
