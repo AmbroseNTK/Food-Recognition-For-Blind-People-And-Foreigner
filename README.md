@@ -12,12 +12,12 @@ Content
 3. [Why?](#why)
 4. [My schedule](#myschedule)
 5. [Methodology](#methodology)
-6. [How to to?](#howtodo)
+6. [Implementation](#implementation)
 7. [My result](#myresult)
 8. [After this camp](#afterthiscamp)
 9. [Summary](#summary)
 10. [Reference](#reference)
-11. [Thank you]()
+11. [Thank you](#thankyou)
 
 </p>
 <h2>
@@ -87,7 +87,7 @@ The first photo is Pho-bo means Pho with beef. The second is Pho-ga means Pho wi
 </p>
 
 <h2>
-6. How to do <a name="howtodo"></a>
+6. Implementation <a name="implementation"></a>
 </h2>
 <p>
 In this section, I would like to show you what I have done and how to continue development this project step by step.</br>
@@ -352,6 +352,20 @@ After this camp, my project is still unfinish. So I have to continue my work. Wh
 
 <h2>
 9. Summary <a name="summary"></a>
+</h2>
+<p>
+
+</p>
+
+<h2>
+10. Reference <a name="reference"></a>
+</h2>
+<p>
+
+</p>
+
+<h2>
+11. Thank you <a name="thankyou"></a>
 </h2>
 <p>
 
