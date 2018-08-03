@@ -180,9 +180,9 @@ Step 3. Prepare dataset for Ingredient Detection model
 <p>
 In this step, you will crop ingredients in food based on photos which you have downloaded in previous step. Before that, you should classify food into groups which have common features. Each group will have a different model. For example, Bun (or noodle rice) in Vietnam has a lot of kinds, so I grouped them into rice-noodle group. This group contains Bun-bo (beef rice noodle), Bun-moc (meatball rice noodle), Bun-ga (chicken rice noodle), etc.. So I would like to put all images of rice-noodle group into rice-noodle folder. After that, I have used
 
-[LabelImg]() to crop ingredients in these images.
+[LabelImg](https://github.com/tzutalin/labelImg) to crop ingredients in these images.
 
-![DemoLabelImg]()
+![DemoLabelImg](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/LabelImgDemo.PNG)
 </br>
 After that, dataset folder should have original images and its .xml files which save all information about ingredient boundary rectangle. These .xml files will be converted to csv files. You should take a subset of dataset for test, its about 10% to 20% of dataset. Move these test data into test folder and train data into train folder.
 </p>
@@ -216,6 +216,109 @@ I haved used mobilenet v2 model, so at tfhub_module I used this link to download
 ```batch
 python label_image.py --graph=<DIRECTORY_TO_GRAPH_FILE> --labels=<DIRECTORY_TO_LABELS_FILE> --input_layer=Placeholder --output_layer=final_result --input_height=224 --input_width=224 --image=<YOUR_IMAGE_FILE>
 ```
+
+</p>
+
+<h3>
+Step 5. Config TensorFlow for Ingredient Detection
+</h3>
+<p>
+Download IngredientDetection branch to your PC and unzip it. You should focus to folder models/object_detection.</br>
+Edit file models/object_detection/training/labelmap.pbtxt. This file contains all ingredient label so you should edit it to suitable with your case.
+
+```json
+item {
+  id: 1
+  name: '<Label 1>'
+}
+item {
+  id: 2
+  name: '<Label 2>'
+}
+.
+.
+.
+item {
+  id: n
+  name: '<Label n>'
+}
+```
+Run command to create csv file from dataset.
+
+```batch
+# In object_detection folder
+python xml_to_csv.py 
+```
+
+Edit file models/generate_tfrecord.py from line 32. This file help you create tfrecord file which is structured file TensorFlow can understand.
+
+```python
+# TO-DO replace this with label map
+def class_text_to_int(row_label):
+    if row_label == 'Label 1':
+        return 1
+    elif row_label == 'Label 2':
+        return 2
+    .
+    .
+    .
+    elif row_label == 'Label n':
+        return n
+    else:
+        return 0
+```
+Run these command to create tfrecord files.
+
+```batch
+python generate_tfrecord.py --csv_input=<TRAIN_FILE_CSV> --image_dir=<TRAIN_FOLDER> --output_path=train.record
+python generate_tfrecord.py --csv_input=<TEST_FILE_CSV> --image_dir=<TEST_FOLDER> --output_path=test.record
+```
+
+Edit config file of your model which you want to train. For me, I used Inception V2, so I download model from [Here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md), copy unzip folder to models/object_detection, then I edit file models/object_detection/training/faster_rcnn_inception_v2_pets.config at:</br>
+* Line 9  : num_classes: <NUMBER_OF_LABEL>
+* Line 106: fine_tune_checkpoint: "object_detection/<MODEL_DIRECTORY>/model.ckpt"
+* Line 122: input_path: "<TRAIN_RECORD_FILE>"
+* Line 124: label_map_path: "<LABELMAP_FILE>"
+* Line 136: input_path: "<TEST_RECORD_FILE>"
+* Line 138: label_map_path: "<LABELMAP_FILE>"
+
+Before start training, you should compile protobuf file. Follow these commands to do that.
+
+```batch
+conda create -n tensorflow1 pip python=3.5
+activate tensorflow1
+pip install --ignore-installed --upgrade tensorflow-gpu
+conda install -c anaconda protobuf
+```
+In models/ folder
+
+```batch
+protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto
+```
+Then run this command
+
+```batch
+protoc object_detection/protos/*.proto --python_out=.
+```
+
+We are ready for training. To start, run this command
+
+```batch
+python train.py --logtostderr --train_dir=object_detection/training --pipeline_config_path=object_detection/training/<YOUR_MODEL_CONFIG_FILE>
+```
+
+Wait for training, In my case, I haved use GPU card, it consumes about 1 second per step. I run above 3000 steps and stop. Here is my result
+
+![IngredientDetectionTrainResult]()
+
+To finish, we need extract model from checkpoint file by using export_inference_graph.py
+
+```batch
+python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/<YOUR_MODEL_CONFIG_FILE> --trained_checkpoint_prefix training/model.ckpt-<HIGHEST_NUMBER> --output_directory inference_graph
+```
+
+Your final model will be saved in folder models/inference_graph
+
 
 </p>
 
