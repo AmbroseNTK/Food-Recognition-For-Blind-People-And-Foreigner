@@ -91,7 +91,7 @@ The first photo is Pho-bo means Pho with beef. The second is Pho-ga means Pho wi
 <p>
 Project is developing, I show you current result. It will be updated continuously.</br>
 
-* Food Recognition: I have trained food recogntion model for 11 basic Vietnamese food (Bun, Com, Pho,...). Here is a cross entropy graph.
+* Food Recognition: I have trained food recogntion model for 10 basic Vietnamese food (Bun, Com, Pho,...). Here is a cross entropy graph.
 ![CrossEntropy_ImageRecognition](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/CrossEntropyTrainImageDetection.PNG)
 Training process have done with result:</br>
 ![ImageRecognitionTrainResult](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/ImageRecognitionTrainResult.PNG)
@@ -126,7 +126,7 @@ Python 2.x | Python is main language to train models | https://www.python.org/do
 TensorFlow | TensorFlow framework supports all things in ML/DL. If your PC have GPU card, you should install TensorFlow-GPU version to get high performance | https://www.tensorflow.org/install/
 Anaconda | In Windows, some package in unvailable, so you should have Anaconda to install them | https://conda.io/docs/user-guide/install/index.html
 </br>
-There is three important tools you have to install first. There are some small tool I will show you after.
+There are three important tools you have to install first, some small tool I will show you after.
 </p>
 
 <h3>
@@ -175,9 +175,47 @@ There are 10 common food in Vietnam and backgroud to recognize uneatable things.
 ```
 After downloading process complete. You need to review all photo, delete error photos or out of topic photo before start training process.
 <h3>
-
+Step 3. Prepare dataset for Ingredient Detection model
 </h3>
 <p>
+In this step, you will crop ingredients in food based on photos which you have downloaded in previous step. Before that, you should classify food into groups which have common features. Each group will have a different model. For example, Bun (or noodle rice) in Vietnam has a lot of kinds, so I grouped them into rice-noodle group. This group contains Bun-bo (beef rice noodle), Bun-moc (meatball rice noodle), Bun-ga (chicken rice noodle), etc.. So I would like to put all images of rice-noodle group into rice-noodle folder. After that, I have used
+
+[LabelImg]() to crop ingredients in these images.
+
+![DemoLabelImg]()
+</br>
+After that, dataset folder should have original images and its .xml files which save all information about ingredient boundary rectangle. These .xml files will be converted to csv files. You should take a subset of dataset for test, its about 10% to 20% of dataset. Move these test data into test folder and train data into train folder.
+</p>
+
+<h3>
+Step 4. Config TensorFlow for Food Recognition
+</h3>
+<p>
+Please download FoodRecognition branch in this Git Repository. I have prepared neccessary python script to train Food Recognition model. Download and unzip it, you will have folder structure below
+
+```batch
+│
+├───ImageRecognizer
+│       classify_image.py
+│       label_image.py
+│       retrain.py
+```
+Run PowerShell and type this command
+
+```batch
+cd <YOUR_IMAGE_RECOGNIZER_DIRECTORY>
+```
+To start training process
+
+```batch
+python retrain.py --image_dir <DIRECTORY_TO_DATASET> --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/1
+```
+
+I haved used mobilenet v2 model, so at tfhub_module I used this link to download model. When training process complete, you will have a model in folder /tmp/ at root directory. Your model contains two file "output_graph.pb" and "output_labels.txt". You need copy them to another place. To use it, run label_image.py
+
+```batch
+python label_image.py --graph=<DIRECTORY_TO_GRAPH_FILE> --labels=<DIRECTORY_TO_LABELS_FILE> --input_layer=Placeholder --output_layer=final_result --input_height=224 --input_width=224 --image=<YOUR_IMAGE_FILE>
+```
 
 </p>
 
