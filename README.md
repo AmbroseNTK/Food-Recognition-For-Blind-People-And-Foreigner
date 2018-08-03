@@ -93,7 +93,7 @@ Project is developing, I show you current result. It will be updated continously
 * Food Recognition: I have trained food recogntion model for 11 basic Vietnamese food (Bun, Com, Pho,...). Here is a cross entropy graph.
 ![CrossEntropy_ImageRecognition](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/CrossEntropyTrainImageDetection.PNG)
 Training process have done with result:</br>
-![ImageRecognitionTrainResult]()
+![ImageRecognitionTrainResult](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/ImageRecognitionTrainResult.PNG)
 
 Test Accurancy is 78.8%, it is not the best, because I do not have enough dataset. To improve it, I would like to increase number of photo in dataset about 1000 photos per food.</br>
 Below is test result:</br>
