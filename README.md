@@ -42,7 +42,7 @@ When I found a idea for this camp, I realised that food is an important part of 
 <p>
 
 <h2>
-4. My plan
+4. My schedule
 </h2>
 <p>
 Due to shortly time of this camp (July 22 to August 7, 2018) and I do not have enough data, I cannot finish all project at the camp. But I still continue to finish.</br>
@@ -65,13 +65,13 @@ Day | Date | What I did
 </p>
 
 <h2>
-Methodology
+5. Methodology
 </h2>
 <p>
-After researched machine learning and implemented libraries, I refer to use TensorFlow with Python programming language and Java/Android for my mobile app. Nowaday, I suppose that TensorFlow is one of the best frameworks for Machine Learning and also Deep Learning. Moreover, TensorFlow had large developer community which ready to help me when I go to problems.</br>
+After researched machine learning and implemented libraries, I refer to use TensorFlow with Python programming language and Java/Android for my mobile app. Nowaday, I suppose that TensorFlow is one of the best frameworks for Machine Learning and also Deep Learning. Moreover, TensorFlow had large developer community which ready to help when I go to problems.</br>
 Project has 3 parts:</br>
 
-* Food Recognition: It is a model to recognize food in a photo in summary. In my case, it returns result like Bun, Pho, Com, Banh-mi etc. I have downloaded above 600 photo per food on Google Image. After that, I have deleted unneccesary images and just keep correct images. I used these images to train the model. It was complete with 77% accurancy.
+* Food Recognition: It is a model to recognize food in a photo in summary. In my case, it returns result like Bun, Pho, Com, Banh-mi etc. I have downloaded above 600 photo per food on Google Image. After that, I have deleted unneccesary images and just keep correct images. I used these images to train the model.
 * Ingredient Detection: According to result which I have after applied Food Recognition model I use ingredient Detection model to detect ingredient in food one by one, so that I can calculate its nutrition, predict its taste. Because of kind variation of food, each food has Ingredient Detection model differently. For example, Pho is a popular food in Vietnam, and its ingredient change its nutrition a lot.
 
 Pho-bo | Pho-ga
@@ -82,4 +82,13 @@ The first photo is Pho-bo means Pho with beef. The second is Pho-ga means Pho wi
 * Mobile App: This is a place where I apply these models all together so that reach project target. I developed an Android app with TensorFlow Lite for mobile. The mobile app capture food photo, then, it uses these models to extract what food and ingredient, finally, it returns all food's information (Name, original, ingredient, taste prediction, nutrition values,...). To help blind people, I use module text-to-speed, so that translate these information into voice, and blind people can hear it.
 
 ![FoodRecognition](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/FoodRecognitionActivityDiagram.jpg)
+</p>
+
+<h2>
+6. My result
+</h2>
+<p>
+Project is developing, I show you current result. It will be updated continously.</br>
+
+* Food Recognition: I have trained food recogntion model for 11 basic Vietnamese food (Bun, Com, Pho,...)
 </p>
