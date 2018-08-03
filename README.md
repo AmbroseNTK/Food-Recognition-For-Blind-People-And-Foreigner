@@ -100,9 +100,9 @@ Below is test result:</br>
 
 Photo | Target | Output | Result
 --- | --- | --- | ---
-![test_bunbo]() | bun bo | bun bo: 0.99073255 | ![]()
-![test_banhmi]() | banh mi | banh mi 0.99794585 | ![]()
-![test_com]() | com | com 0.85801125 | ![]()
-![test_banhbao]() | banh bao | banh bao 0.99786466 | ![]()
+![test_bunbo](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_bunbo.jpg) | bun bo | bun bo: 0.99073255 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
+![test_banhmi](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_banhmi.jpg) | banh mi | banh mi 0.99794585 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
+![test_com](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_com.jpg) | com | com 0.85801125 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
+![test_banhbao](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_banhbao.jpg) | banh bao | banh bao 0.99786466 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
 
 </p>
