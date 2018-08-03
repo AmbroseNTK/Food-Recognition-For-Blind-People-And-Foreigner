@@ -90,6 +90,19 @@ The first photo is Pho-bo means Pho with beef. The second is Pho-ga means Pho wi
 <p>
 Project is developing, I show you current result. It will be updated continously.</br>
 
-* Food Recognition: I have trained food recogntion model for 11 basic Vietnamese food (Bun, Com, Pho,...)
+* Food Recognition: I have trained food recogntion model for 11 basic Vietnamese food (Bun, Com, Pho,...). Here is a cross entropy graph.
 ![CrossEntropy_ImageRecognition](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/CrossEntropyTrainImageDetection.PNG)
+Training process have done with result:</br>
+![ImageRecognitionTrainResult]()
+
+Test Accurancy is 78.8%, it is not the best, because I do not have enough dataset. To improve it, I would like to increase number of photo in dataset about 1000 photos per food.</br>
+Below is test result:</br>
+
+Photo | Target | Output | Result
+--- | --- | --- | ---
+![test_bunbo]() | bun bo | bun bo: 0.99073255 | ![]()
+![test_banhmi]() | banh mi | banh mi 0.99794585 | ![]()
+![test_com]() | com | com 0.85801125 | ![]()
+![test_banhbao]() | banh bao | banh bao 0.99786466 | ![]()
+
 </p>
