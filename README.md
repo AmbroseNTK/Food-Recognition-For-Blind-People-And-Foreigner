@@ -309,7 +309,7 @@ python train.py --logtostderr --train_dir=object_detection/training --pipeline_c
 
 Wait for training, In my case, I haved use GPU card, it consumes about 1 second per step. I run above 3000 steps and stop. Here is my result
 
-![IngredientDetectionTrainResult]()
+![IngredientDetectionTrainResult](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/IngredientDetectionTrainingResult.PNG)
 
 To finish, we need extract model from checkpoint file by using export_inference_graph.py
 
