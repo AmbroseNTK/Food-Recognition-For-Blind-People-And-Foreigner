@@ -17,7 +17,7 @@ Content
 8. [After this camp](#afterthiscamp)
 9. [Summary](#summary)
 10. [Reference](#reference)
-11. [Thank you](#thankyou)
+11. [Acknowledgement](#acknowledgement)
 
 </p>
 <h2>
@@ -365,8 +365,8 @@ After this camp, my project is still unfinish. So I have to continue my work. Wh
 </p>
 
 <h2>
-11. Thank you <a name="thankyou"></a>
+11. Acknowledgement <a name="acknowledgement"></a>
 </h2>
 <p>
-
+This project is not possible without the overwhelming suppport from Jeju National University, Jeju Developement Center and other selfless sponsors. I would like to specifically give a big thanks to Prof. Yungcheol Byun for being the best host ever and my mentor Dr.Lap Nguyen Trung for the help and guidance.
 </p>
