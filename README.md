@@ -1,4 +1,4 @@
-![Title](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/JMLC2018-title.png)
+![Title](https://drive.google.com/file/d/19i21rD4bxs0tbSZ_jsznTRdJn4AAht70/view)
 <h1>
 Food Recognition For Blind People And Foreigner
 </h1>
