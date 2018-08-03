@@ -86,30 +86,7 @@ The first photo is Pho-bo means Pho with beef. The second is Pho-ga means Pho wi
 </p>
 
 <h2>
-6. My result <a name="myresult"></a>
-</h2>
-<p>
-Project is developing, I show you current result. It will be updated continuously.</br>
-
-* Food Recognition: I have trained food recogntion model for 10 basic Vietnamese food (Bun, Com, Pho,...). Here is a cross entropy graph.
-![CrossEntropy_ImageRecognition](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/CrossEntropyTrainImageDetection.PNG)
-Training process have done with result:</br>
-![ImageRecognitionTrainResult](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/ImageRecognitionTrainResult.PNG)
-
-Test accurancy is 78.8%, it is not the best, because I do not have enough dataset. To improve it, I would like to increase number of photo in dataset about 1000 photos per food.</br>
-Below is test result:</br>
-
-Photo | Target | Output | Result
---- | --- | --- | ---
-![test_bunbo](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_bunbo.jpg) | bun bo | bun bo: 0.99073255 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
-![test_banhmi](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_banhmi.jpg) | banh mi | banh mi 0.99794585 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
-![test_com](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_com.jpg) | com | com 0.85801125 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
-![test_banhbao](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_banhbao.jpg) | banh bao | banh bao 0.99786466 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
-
-</p>
-
-<h2>
-7. How to do <a name="howtodo"></a>
+6. How to do <a name="howtodo"></a>
 </h2>
 <p>
 In this section, I would like to show you what I have done and how to continue development this project step by step.</br>
@@ -188,7 +165,7 @@ After that, dataset folder should have original images and its .xml files which 
 </p>
 
 <h3>
-Step 4. Config TensorFlow for Food Recognition
+Step 4. Train Food Recognition
 </h3>
 <p>
 Please download FoodRecognition branch in this Git Repository. I have prepared neccessary python script to train Food Recognition model. Download and unzip it, you will have folder structure below
@@ -220,7 +197,7 @@ python label_image.py --graph=<DIRECTORY_TO_GRAPH_FILE> --labels=<DIRECTORY_TO_L
 </p>
 
 <h3>
-Step 5. Config TensorFlow for Ingredient Detection
+Step 5. Train Ingredient Detection
 </h3>
 <p>
 Download IngredientDetection branch to your PC and unzip it. You should focus to folder models/object_detection.</br>
@@ -321,6 +298,29 @@ Your final model will be saved in folder models/inference_graph
 
 
 </p>
+
+</p>
+
+<h2>
+7. My result <a name="myresult"></a>
+</h2>
+<p>
+Project is developing, I show you current result. It will be updated continuously.</br>
+
+* Food Recognition: I have trained food recogntion model for 10 basic Vietnamese food (Bun, Com, Pho,...). Here is a cross entropy graph.
+![CrossEntropy_ImageRecognition](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/CrossEntropyTrainImageDetection.PNG)
+Training process have done with result:</br>
+![ImageRecognitionTrainResult](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/ImageRecognitionTrainResult.PNG)
+
+Test accurancy is 78.8%, it is not the best, because I do not have enough dataset. To improve it, I would like to increase number of photo in dataset about 1000 photos per food.</br>
+Below is test result:</br>
+
+Photo | Target | Output | Result
+--- | --- | --- | ---
+![test_bunbo](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_bunbo.jpg) | bun bo | bun bo: 0.99073255 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
+![test_banhmi](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_banhmi.jpg) | banh mi | banh mi 0.99794585 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
+![test_com](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_com.jpg) | com | com 0.85801125 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
+![test_banhbao](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_banhbao.jpg) | banh bao | banh bao 0.99786466 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
 
 </p>
 
