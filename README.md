@@ -5,10 +5,10 @@ Food Recognition For Blind People And Foreigner
 <h2>
 Content
 </h2>
-<p>
 
 .. contents:: :local:
 
+<p>
 1. About me
 2. What is it?
 3. Why?
