@@ -6,20 +6,22 @@ Food Recognition For Blind People And Foreigner
 Content
 </h2>
 <p>
-
+.. contents:: :local:
 1. About me
 2. What is it?
 3. Why?
 4. My Plan
 5. Methodology
 6. My result
-7. After this camp
-8. Summary
-9. Reference
+7. How to to?
+8. After this camp
+9. Summary
+10. Reference
 </p>
 
 <h2>
 1. About me
+===========
 </h2>
 <p>
 
@@ -28,6 +30,7 @@ Welcome to my MLC GitHub page. My name is ***Kiet Nguyen Tuan (Ambrose)*** . I w
 
 <h2>
 2. What is it?
+==============
 </h2>
 <p>
 
@@ -36,6 +39,7 @@ In this project, I would like to develop a collection of model that can use to r
 
 <h2>
 3. Why?
+=======
 </h2>
 <p>
 When I found a idea for this camp, I realised that food is an important part of country's culture so that every people should have knowledge about food of place where they stay at. Moreover, disable people, specially blind people also need help to know what food they eat. For foreigner, I will be an useful food's guideline at place their visit and also be an assitant to track what their eat and suggest what they should or should not eat.
@@ -51,7 +55,7 @@ Here is my plan</br>
 Day | Date | What I did
 --- | --- | ---
 1 | July 22, 2018 | I came to Jeju island lately due to a storm at Shanghai.
-2 | July 23, 2018 | I prepared a introduction presentation and attended MLC Opening Ceremony.
+2 | July 23, 2018 | I prepared an introduction presentation and attended MLC Opening Ceremony.
 3 | July 24, 2018 | I visited Jeju Development Center and had a seminar about blockchain with AI.
 4 | July 25, 2018 | I reviewed all my project which I have prepared at home and viewed Google Cloud Platform tutorial.
 5 | July 26, 2018 | I re-designed UI for Android App and applied Firebase.
@@ -95,7 +99,7 @@ Project is developing, I show you current result. It will be updated continously
 Training process have done with result:</br>
 ![ImageRecognitionTrainResult](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/ImageRecognitionTrainResult.PNG)
 
-Test Accurancy is 78.8%, it is not the best, because I do not have enough dataset. To improve it, I would like to increase number of photo in dataset about 1000 photos per food.</br>
+Test accurancy is 78.8%, it is not the best, because I do not have enough dataset. To improve it, I would like to increase number of photo in dataset about 1000 photos per food.</br>
 Below is test result:</br>
 
 Photo | Target | Output | Result
@@ -104,5 +108,56 @@ Photo | Target | Output | Result
 ![test_banhmi](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_banhmi.jpg) | banh mi | banh mi 0.99794585 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
 ![test_com](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_com.jpg) | com | com 0.85801125 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
 ![test_banhbao](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_banhbao.jpg) | banh bao | banh bao 0.99786466 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
+
+</p>
+
+<h2>
+7. How to do
+</h2>
+<p>
+In this section, I would like to show you what I have done and how to continue development this project step by step.</br>
+
+<h3>
+Step 1. Prepare data to create Image Recognition model.
+</h3>
+<p>
+There are a lot of ways to collect photos. For me, I refer to collect them on Google Image, because it is the largest search engine, so it contains a lot of photos. The simple way is use a tool that let you download images automatically based on keywords. I have used [this tool](https://github.com/hardikvasa/google-images-download). Each food should have different folders. Notice that the folder name is also the label of food, so please check it carefully.</br>
+
+```batch
+└───vietnamese_food
+    ├───background
+    ├───banh bao
+    ├───banh mi
+    ├───bo bit tet
+    ├───bun bo
+    ├───com dia
+    ├───dau hu
+    ├───mi xao
+    ├───rau xao
+    ├───thit kho tau
+    └───trung op la
+```
+There are 10 common food in Vietnam and backgroud to recognize uneatable things. Here is my sample config</br>
+
+```json
+{
+    "Records": [
+        {
+            "keywords": "bun bo",
+            "limit":600,
+            "type":"photo",
+            "format":"jpg",
+            "output_directory":"vietnamese_food/",
+            "chromedriver":"chromedriver.exe"
+
+        },
+        {
+
+        },...
+    ]
+}
+```
+After downloading process complete. You need to review all photo, delete error photos or out of topic photo before start training process.
+</p>
 
 </p>
