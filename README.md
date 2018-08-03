@@ -89,7 +89,7 @@ The first photo is Pho-bo means Pho with beef. The second is Pho-ga means Pho wi
 6. My result <a name="myresult"></a>
 </h2>
 <p>
-Project is developing, I show you current result. It will be updated continously.</br>
+Project is developing, I show you current result. It will be updated continuously.</br>
 
 * Food Recognition: I have trained food recogntion model for 11 basic Vietnamese food (Bun, Com, Pho,...). Here is a cross entropy graph.
 ![CrossEntropy_ImageRecognition](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/CrossEntropyTrainImageDetection.PNG)
@@ -115,7 +115,22 @@ Photo | Target | Output | Result
 In this section, I would like to show you what I have done and how to continue development this project step by step.</br>
 
 <h3>
-Step 1. Prepare data to create Image Recognition model.
+Step 1. Setup development environment
+</h3>
+<p>
+In this project, you should install some application which is shown in below table.</br>
+
+Tool | Description | Link
+--- | --- | ---
+Python 2.x | Python is main language to train models | https://www.python.org/downloads/
+TensorFlow | TensorFlow framework supports all things in ML/DL. If your PC have GPU card, you should install TensorFlow-GPU version to get high performance | https://www.tensorflow.org/install/
+Anaconda | In Windows, some package in unvailable, so you should have Anaconda to install them | https://conda.io/docs/user-guide/install/index.html
+</br>
+There is three important tools you have to install first. There are some small tool I will show you after.
+</p>
+
+<h3>
+Step 2. Prepare data to create Image Recognition model.
 </h3>
 <p>
 There are a lot of ways to collect photos. For me, I refer to collect them on Google Image, because it is the largest search engine, so it contains a lot of photos. The simple way is use a tool that let you download images automatically based on keywords. I have used 
@@ -159,6 +174,13 @@ There are 10 common food in Vietnam and backgroud to recognize uneatable things.
 }
 ```
 After downloading process complete. You need to review all photo, delete error photos or out of topic photo before start training process.
+<h3>
+
+</h3>
+<p>
+
+</p>
+
 </p>
 
 </p>
