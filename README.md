@@ -81,5 +81,5 @@ Pho-bo | Pho-ga
 The first photo is Pho-bo means Pho with beef. The second is Pho-ga means Pho with chicken. All of them is Pho, but they have different ingredient. Because of nutrition difference of beef and chicken, so Pho-bo and Pho-ga have different nutrition. So Ingredient Detection is an important step to solve this problem which is common in anothor food's culture.
 * Mobile App: This is a place where I apply these models all together so that reach project target. I developed an Android app with TensorFlow Lite for mobile. The mobile app capture food photo, then, it uses these models to extract what food and ingredient, finally, it returns all food's information (Name, original, ingredient, taste prediction, nutrition values,...). To help blind people, I use module text-to-speed, so that translate these information into voice, and blind people can hear it.
 
-![FoodRecognition]()
+![FoodRecognition](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/FoodRecognitionActivityDiagram.jpg)
 </p>
