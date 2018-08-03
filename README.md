@@ -1,4 +1,4 @@
-![Title](https://drive.google.com/file/d/19i21rD4bxs0tbSZ_jsznTRdJn4AAht70/view)
+![Title](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/JMLC2018-title.png)
 <h1>
 Food Recognition For Blind People And Foreigner
 </h1>
@@ -81,7 +81,7 @@ Pho-bo | Pho-ga
 The first photo is Pho-bo means Pho with beef. The second is Pho-ga means Pho with chicken. All of them is Pho, but they have different ingredient. Because of nutrition difference of beef and chicken, so Pho-bo and Pho-ga have different nutrition. So Ingredient Detection is an important step to solve this problem which is common in anothor food's culture.
 * Mobile App: This is a place where I apply these models all together so that reach project target. I developed an Android app with TensorFlow Lite for mobile. The mobile app capture food photo, then, it uses these models to extract what food and ingredient, finally, it returns all food's information (Name, original, ingredient, taste prediction, nutrition values,...). To help blind people, I use module text-to-speed, so that translate these information into voice, and blind people can hear it.
 
-![FoodRecognition](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/FoodRecognitionActivityDiagram.jpg)
+![FoodRecognition](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/ActivityDiagram.jpg)
 </p>
 
 <h2>
@@ -91,4 +91,5 @@ The first photo is Pho-bo means Pho with beef. The second is Pho-ga means Pho wi
 Project is developing, I show you current result. It will be updated continously.</br>
 
 * Food Recognition: I have trained food recogntion model for 11 basic Vietnamese food (Bun, Com, Pho,...)
+![CrossEntropy_ImageRecognition](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/CrossEntropyTrainImageDetection.PNG)
 </p>
