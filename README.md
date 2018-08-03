@@ -12,11 +12,12 @@ Content
 3. [Why?](#why)
 4. [My schedule](#myschedule)
 5. [Methodology](#methodology)
-6. [My result](#myresult)
-7. [How to to?](#howtodo)
+6. [How to to?](#howtodo)
+7. [My result](#myresult)
 8. [After this camp](#afterthiscamp)
 9. [Summary](#summary)
 10. [Reference](#reference)
+11. [Thank you]()
 
 </p>
 <h2>
@@ -324,10 +325,34 @@ Photo | Target | Output | Result
 
 * Ingredient Detection: Because I do not have enough photo (just 100 photos) so model still has low accurancy.
 ![test_ingredientDetection1](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_object_detection1.PNG)
+</br>
 Here is graphs
 
 ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/GraphIngredientDetection.PNG)
 
 </p>
+
+</p>
+
+<h2>
+8. After this camp <a name="afterthiscamp"></a>
+</h2>
+<p>
+After this camp, my project is still unfinish. So I have to continue my work. What I will do is shown below
+
+.No | Task
+--- | ---
+1 | Prepare more data for Food Recognition. Not only 10 Vietnamese food, but also more food.
+2 | Prepare more data for Ingredient Detection. I will classify these food into a lot of subclass. I will collect 500 photos per subclass.
+3 | Try anothor models such as mobilenet v2,...
+4 | Finish food tracking function in Android app.
+5 | Create app for iOS platform.
+6 | Improve accurancy and performance. I would like to serve as a service via Web API, so these model will be stored and ran on server.
+</p>
+
+<h2>
+9. Summary <a name="summary"></a>
+</h2>
+<p>
 
 </p>
