@@ -6,19 +6,21 @@ Food Recognition For Blind People And Foreigner
 Content
 </h2>
 <p>
+
 1. [About me](#about)
-2. What is it?
-3. Why?
-4. My Plan
-5. Methodology
-6. My result
-7. How to to?
-8. After this camp
-9. Summary
-10. Reference
+2. [What is it?](#whatisit)
+3. [Why?](#why)
+4. [My schedule](#myschedule)
+5. [Methodology](#methodology)
+6. [My result](#myresult)
+7. [How to to?](#howtodo)
+8. [After this camp](#afterthiscamp)
+9. [Summary](#summary)
+10. [Reference](#reference)
+
 </p>
 <h2>
-## 1. About me <a name="about"></a>
+1. About me <a name="about"></a>
 </h2>
 <p>
 
@@ -26,7 +28,7 @@ Welcome to my MLC GitHub page. My name is ***Kiet Nguyen Tuan (Ambrose)*** . I w
 </p>
 
 <h2>
-2. What is it?
+2. What is it? <a name="whatisit"></a>
 </h2>
 <p>
 
@@ -34,14 +36,14 @@ In this project, I would like to develop a collection of model that can use to r
 </p>
 
 <h2>
-3. Why?
+3. Why? <a name="why"></a>
 </h2>
 <p>
 When I found a idea for this camp, I realised that food is an important part of country's culture so that every people should have knowledge about food of place where they stay at. Moreover, disable people, specially blind people also need help to know what food they eat. For foreigner, I will be an useful food's guideline at place their visit and also be an assitant to track what their eat and suggest what they should or should not eat.
 <p>
 
 <h2>
-4. My schedule
+4. My schedule <a name="myschedule"></a>
 </h2>
 <p>
 Due to shortly time of this camp (July 22 to August 7, 2018) and I do not have enough data, I cannot finish all project at the camp. But I still continue to finish.</br>
@@ -64,7 +66,7 @@ Day | Date | What I did
 </p>
 
 <h2>
-5. Methodology
+5. Methodology <a name="methodology"></a>
 </h2>
 <p>
 After researched machine learning and implemented libraries, I refer to use TensorFlow with Python programming language and Java/Android for my mobile app. Nowaday, I suppose that TensorFlow is one of the best frameworks for Machine Learning and also Deep Learning. Moreover, TensorFlow had large developer community which ready to help when I go to problems.</br>
@@ -84,7 +86,7 @@ The first photo is Pho-bo means Pho with beef. The second is Pho-ga means Pho wi
 </p>
 
 <h2>
-6. My result
+6. My result <a name="myresult"></a>
 </h2>
 <p>
 Project is developing, I show you current result. It will be updated continously.</br>
@@ -107,7 +109,7 @@ Photo | Target | Output | Result
 </p>
 
 <h2>
-7. How to do
+7. How to do <a name="howtodo"></a>
 </h2>
 <p>
 In this section, I would like to show you what I have done and how to continue development this project step by step.</br>
@@ -116,7 +118,11 @@ In this section, I would like to show you what I have done and how to continue d
 Step 1. Prepare data to create Image Recognition model.
 </h3>
 <p>
-There are a lot of ways to collect photos. For me, I refer to collect them on Google Image, because it is the largest search engine, so it contains a lot of photos. The simple way is use a tool that let you download images automatically based on keywords. I have used [this tool](https://github.com/hardikvasa/google-images-download). Each food should have different folders. Notice that the folder name is also the label of food, so please check it carefully.</br>
+There are a lot of ways to collect photos. For me, I refer to collect them on Google Image, because it is the largest search engine, so it contains a lot of photos. The simple way is use a tool that let you download images automatically based on keywords. I have used 
+
+[this tool](https://github.com/hardikvasa/google-images-download)
+
+. Each food should have different folders. Notice that the folder name is also the label of food, so please check it carefully.</br>
 
 ```batch
 └───vietnamese_food
