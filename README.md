@@ -16,7 +16,7 @@ Content
 7. [My result](#myresult)
 8. [After this camp](#afterthiscamp)
 9. [Summary](#summary)
-10. [Reference](#reference)
+10. [References](#reference)
 11. [Acknowledgement](#acknowledgement)
 
 </p>
@@ -105,9 +105,9 @@ In this project, you should install some application which is shown in below tab
 
 Tool | Description | Link
 --- | --- | ---
-Python 2.x | Python is main language to train models | https://www.python.org/downloads/
-TensorFlow | TensorFlow framework supports all things in ML/DL. If your PC have GPU card, you should install TensorFlow-GPU version to get high performance | https://www.tensorflow.org/install/
-Anaconda | In Windows, some package in unvailable, so you should have Anaconda to install them | https://conda.io/docs/user-guide/install/index.html
+![]() | Python is main language to train models | https://www.python.org/downloads/
+![]() | TensorFlow framework supports all things in ML/DL. If your PC have GPU card, you should install TensorFlow-GPU version to get high performance | https://www.tensorflow.org/install/
+![]() | In Windows, some package in unvailable, so you should have Anaconda to install them | https://conda.io/docs/user-guide/install/index.html
 </br>
 There are three important tools you have to install first, some small tool I will show you after.
 </p>
@@ -363,7 +363,7 @@ All in all, This project was complete 70%. During the camp, I had more experienc
 </p>
 
 <h2>
-10. Reference <a name="reference"></a>
+10. References <a name="reference"></a>
 </h2>
 <p>
 
@@ -381,5 +381,5 @@ Simon Mezgec 1,* and Barbara Koroušic´ Seljak 2
 11. Acknowledgement <a name="acknowledgement"></a>
 </h2>
 <p>
-This project is not possible without the overwhelming suppport from Jeju National University, Jeju Developement Center and other selfless sponsors. I would like to specifically give a big thanks to Prof. Yungcheol Byun for being the best host ever and my mentor Dr.Lap Nguyen Trung for the help and guidance.
+This project is not possible without the overwhelming suppport from **Jeju National University**, **Jeju Developement Center** and other selfless sponsors. I would like to specifically give a big thanks to **Prof. Yungcheol Byun** for being the best host ever and my mentor **Dr.Lap Nguyen Trung** for the help and guidance.
 </p>
