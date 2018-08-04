@@ -74,7 +74,12 @@ After researched machine learning and implemented libraries, I refer to use Tens
 Project has 3 parts:</br>
 
 * Food Recognition: It is a model to recognize food in a photo in summary. In my case, it returns result like Bun, Pho, Com, Banh-mi etc. I have downloaded above 600 photo per food on Google Image. After that, I have deleted unneccesary images and just keep correct images. I used these images to train the model.
+
+![FoodRecognitionFlow]()
+
 * Ingredient Detection: According to result which I have after applied Food Recognition model I use ingredient Detection model to detect ingredient in food one by one, so that I can calculate its nutrition, predict its taste. Because of kind variation of food, each food has Ingredient Detection model differently. For example, Pho is a popular food in Vietnam, and its ingredient change its nutrition a lot.
+
+![IngredientDetection]()
 
 Pho-bo | Pho-ga
 --- | ---
@@ -313,7 +318,7 @@ Project is developing, I show you current result. It will be updated continuousl
 Training process have done with result:</br>
 ![ImageRecognitionTrainResult](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/ImageRecognitionTrainResult.PNG)
 
-Test accurancy is 78.8%, it is not the best, because I do not have enough dataset. To improve it, I would like to increase number of photo in dataset about 1000 photos per food.</br>
+Test accuracy is 78.8%, it is not the best, because I do not have enough dataset. To improve it, I would like to increase number of photo in dataset about 1000 photos per food.</br>
 Below is test result:</br>
 
 Photo | Target | Output | Result
@@ -323,7 +328,7 @@ Photo | Target | Output | Result
 ![test_com](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_com.jpg) | com | com 0.85801125 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
 ![test_banhbao](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_banhbao.jpg) | banh bao | banh bao 0.99786466 | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/correct.png)
 
-* Ingredient Detection: Because I do not have enough photo (just 100 photos) so model still has low accurancy.
+* Ingredient Detection: Because I do not have enough photo (just 100 photos) so model still has low accuracy.
 ![test_ingredientDetection1](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/test_object_detection1.PNG)
 </br>
 Here is graphs
@@ -347,7 +352,7 @@ After this camp, my project is still unfinish. So I have to continue my work. Wh
 3 | Try anothor models such as mobilenet v2,...
 4 | Finish food tracking function in Android app.
 5 | Create app for iOS platform.
-6 | Improve accurancy and performance. I would like to serve as a service via Web API, so these model will be stored and ran on server.
+6 | Improve accuracy and performance. I would like to serve as a service via Web API, so these model will be stored and ran on server.
 </p>
 
 <h2>
