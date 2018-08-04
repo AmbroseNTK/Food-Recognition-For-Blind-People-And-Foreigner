@@ -194,7 +194,7 @@ To start training process
 python retrain.py --image_dir <DIRECTORY_TO_DATASET> --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/1
 ```
 
-I haved used mobilenet v2 model, so at tfhub_module I used this link to download model. When training process complete, you will have a model in folder /tmp/ at root directory. Your model contains two file "output_graph.pb" and "output_labels.txt". You need copy them to another place. To use it, run label_image.py
+I haved used mobilenet v2 model, so at tfhub_module I used this link to download model. When training process complete, you will have a model in folder **/tmp/** at root directory. Your model contains two file **"output_graph.pb"** and **"output_labels.txt"**. You need copy them to another place. To use it, run **label_image.py**
 
 ```batch
 python label_image.py --graph=<DIRECTORY_TO_GRAPH_FILE> --labels=<DIRECTORY_TO_LABELS_FILE> --input_layer=Placeholder --output_layer=final_result --input_height=224 --input_width=224 --image=<YOUR_IMAGE_FILE>
@@ -206,8 +206,8 @@ python label_image.py --graph=<DIRECTORY_TO_GRAPH_FILE> --labels=<DIRECTORY_TO_L
 Step 5. Train Ingredient Detection
 </h3>
 <p>
-Download IngredientDetection branch to your PC and unzip it. You should focus to folder models/object_detection.</br>
-Edit file models/object_detection/training/labelmap.pbtxt. This file contains all ingredient label so you should edit it to suitable with your case.
+Download IngredientDetection branch to your PC and unzip it. You should focus to folder **models/object_detection**.</br>
+Edit file **models/object_detection/training/labelmap.pbtxt**. This file contains all ingredient label so you should edit it to suitable with your case.
 
 ```json
 item {
@@ -233,7 +233,7 @@ Run command to create csv file from dataset.
 python xml_to_csv.py 
 ```
 
-Edit file models/generate_tfrecord.py from line 32. This file help you create tfrecord file which is structured file TensorFlow can understand.
+Edit file **models/generate_tfrecord.py** from line 32. This file help you create tfrecord file which is structured file TensorFlow can understand.
 
 ```python
 # TO-DO replace this with label map
@@ -273,7 +273,7 @@ activate tensorflow1
 pip install --ignore-installed --upgrade tensorflow-gpu
 conda install -c anaconda protobuf
 ```
-In models/ folder
+In **models/** folder
 
 ```batch
 protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto
@@ -318,7 +318,7 @@ Project is developing, I show you current result. It will be updated continuousl
 Training process have done with result:</br>
 ![ImageRecognitionTrainResult](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/ImageRecognitionTrainResult.PNG)
 
-Test accuracy is 78.8%, it is not the best, because I do not have enough dataset. To improve it, I would like to increase number of photo in dataset about 1000 photos per food.</br>
+Test accuracy is **78.8%**, it is not the best, because I do not have enough dataset. To improve it, I would like to increase number of photo in dataset about 1000 photos per food.</br>
 Below is test result:</br>
 
 Photo | Target | Output | Result
@@ -359,7 +359,7 @@ After this camp, my project is still unfinish. So I have to continue my work. Wh
 9. Summary <a name="summary"></a>
 </h2>
 <p>
-
+All in all, This project was complete 70%. During the camp, I had more experience in work with Machine Learning and learnt how to do teamwork effeciently. Moreover, I had new friends from other countries, so we can share knowledge and experience together. The camp was really worthy and interesting.
 </p>
 
 <h2>
@@ -367,6 +367,14 @@ After this camp, my project is still unfinish. So I have to continue my work. Wh
 </h2>
 <p>
 
+1. Image recogntion: https://www.tensorflow.org/hub/tutorials/image_retraining
+2. Object detection: https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
+3. NutriNet: A Deep Learning Food and Drink Image Recognition System for Dietary Assessment
+Simon Mezgec 1,* and Barbara Koroušic´ Seljak 2 
+4. Deep Learning Based Food Recognition (Qian Yu Stanford University qiany@stanford.edu, Dongyuan Mao, Stanford University dmao@stanford.edu, Jingfan Wang Stanford University jingfan@stanford.edu)
+5. FOODIMAGERECOGNITIONUSINGDEEPCONVOLUTIONALNETWORK WITHPRE-TRAININGANDFINE-TUNING (Keiji Yanai, Yoshiyuki Kawano)
+ 
+ 
 </p>
 
 <h2>
