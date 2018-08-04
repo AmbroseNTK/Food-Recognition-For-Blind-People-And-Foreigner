@@ -116,9 +116,8 @@ There are three important tools you have to install first, some small tool I wil
 Step 2. Prepare data to create Image Recognition model.
 </h3>
 <p>
-There are a lot of ways to collect photos. For me, I refer to collect them on Google Image, because it is the largest search engine, so it contains a lot of photos. The simple way is use a tool that let you download images automatically based on keywords. I have used 
 
-[this tool](https://github.com/hardikvasa/google-images-download)
+There are a lot of ways to collect photos. For me, I refer to collect them on Google Image, because it is the largest search engine, so it contains a lot of photos. The simple way is use a tool that let you download images automatically based on keywords. I have used [this tool](https://github.com/hardikvasa/google-images-download)
 
 . Each food should have different folders. Notice that the folder name is also the label of food, so please check it carefully.</br>
 
@@ -161,9 +160,8 @@ After downloading process complete. You need to review all photo, delete error p
 Step 3. Prepare dataset for Ingredient Detection model
 </h3>
 <p>
-In this step, you will crop ingredients in food based on photos which you have downloaded in previous step. Before that, you should classify food into groups which have common features. Each group will have a different model. For example, Bun (or noodle rice) in Vietnam has a lot of kinds, so I grouped them into rice-noodle group. This group contains Bun-bo (beef rice noodle), Bun-moc (meatball rice noodle), Bun-ga (chicken rice noodle), etc.. So I would like to put all images of rice-noodle group into rice-noodle folder. After that, I have used
 
-[LabelImg](https://github.com/tzutalin/labelImg) to crop ingredients in these images.
+In this step, you will crop ingredients in food based on photos which you have downloaded in previous step. Before that, you should classify food into groups which have common features. Each group will have a different model. For example, Bun (or noodle rice) in Vietnam has a lot of kinds, so I grouped them into rice-noodle group. This group contains Bun-bo (beef rice noodle), Bun-moc (meatball rice noodle), Bun-ga (chicken rice noodle), etc.. So I would like to put all images of rice-noodle group into rice-noodle folder. After that, I have used [LabelImg](https://github.com/tzutalin/labelImg) to crop ingredients in these images.
 
 ![DemoLabelImg](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/LabelImgDemo.PNG)
 </br>
@@ -174,7 +172,8 @@ After that, dataset folder should have original images and its .xml files which 
 Step 4. Train Food Recognition
 </h3>
 <p>
-Please download FoodRecognition branch in this Git Repository. I have prepared neccessary python script to train Food Recognition model. Download and unzip it, you will have folder structure below
+
+Please download [FoodRecognition branch](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/tree/FoodRecognition) in this Git Repository. I have prepared neccessary python script to train Food Recognition model. Download and unzip it, you will have folder structure below
 
 ```batch
 │
@@ -206,7 +205,8 @@ python label_image.py --graph=<DIRECTORY_TO_GRAPH_FILE> --labels=<DIRECTORY_TO_L
 Step 5. Train Ingredient Detection
 </h3>
 <p>
-Download IngredientDetection branch to your PC and unzip it. You should focus to folder **models/object_detection**.</br>
+
+Download [IngredientDetection branch](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/tree/IngredientDetection) to your PC and unzip it. You should focus to folder **models/object_detection**.</br>
 Edit file **models/object_detection/training/labelmap.pbtxt**. This file contains all ingredient label so you should edit it to suitable with your case.
 
 ```json
