@@ -381,5 +381,6 @@ Simon Mezgec 1,* and Barbara Koroušic´ Seljak 2
 11. Acknowledgement <a name="acknowledgement"></a>
 </h2>
 <p>
-This project is not possible without the overwhelming suppport from **Jeju National University**, **Jeju Developement Center** and other selfless sponsors. I would like to specifically give a big thanks to **Prof. Yungcheol Byun** for being the best host ever and my mentor **Dr.Lap Nguyen Trung** for the help and guidance.
+
+This project is not possible without the overwhelming suppport from  **Jeju National University**, **Jeju Developement Center** and other selfless sponsors. I would like to specifically give a big thanks to **Prof. Yungcheol Byun** for being the best host ever and my mentor **Dr.Lap Nguyen Trung** for the help and guidance.
 </p>
