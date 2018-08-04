@@ -75,11 +75,11 @@ Project has 3 parts:</br>
 
 * Food Recognition: It is a model to recognize food in a photo in summary. In my case, it returns result like Bun, Pho, Com, Banh-mi etc. I have downloaded above 600 photo per food on Google Image. After that, I have deleted unneccesary images and just keep correct images. I used these images to train the model.
 
-![FoodRecognitionFlow]()
+![FoodRecognitionFlow](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/FoodRecognitionFlow.jpeg)
 
 * Ingredient Detection: According to result which I have after applied Food Recognition model I use ingredient Detection model to detect ingredient in food one by one, so that I can calculate its nutrition, predict its taste. Because of kind variation of food, each food has Ingredient Detection model differently. For example, Pho is a popular food in Vietnam, and its ingredient change its nutrition a lot.
 
-![IngredientDetection]()
+![IngredientDetection](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/IngredientDetectionFlow.jpeg)
 
 Pho-bo | Pho-ga
 --- | ---
