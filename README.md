@@ -105,9 +105,9 @@ In this project, you should install some application which is shown in below tab
 
 Tool | Description | Link
 --- | --- | ---
-![]() | Python is main language to train models | https://www.python.org/downloads/
-![]() | TensorFlow framework supports all things in ML/DL. If your PC have GPU card, you should install TensorFlow-GPU version to get high performance | https://www.tensorflow.org/install/
-![]() | In Windows, some package in unvailable, so you should have Anaconda to install them | https://conda.io/docs/user-guide/install/index.html
+![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/python-logo-master-v3-TM.png) | Python is main language to train models | https://www.python.org/downloads/
+![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/tensorflow-logo.png) | TensorFlow framework supports all things in ML/DL. If your PC have GPU card, you should install TensorFlow-GPU version to get high performance | https://www.tensorflow.org/install/
+![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/Anaconda_Logo.png) | In Windows, some package in unvailable, so you should have Anaconda to install them | https://conda.io/docs/user-guide/install/index.html
 </br>
 There are three important tools you have to install first, some small tool I will show you after.
 </p>
