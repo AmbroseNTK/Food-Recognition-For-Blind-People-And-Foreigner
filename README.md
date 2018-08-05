@@ -300,7 +300,8 @@ To finish, we need extract model from checkpoint file by using export_inference_
 python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/<YOUR_MODEL_CONFIG_FILE> --trained_checkpoint_prefix training/model.ckpt-<HIGHEST_NUMBER> --output_directory inference_graph
 ```
 
-Your final model will be saved in folder models/inference_graph
+Your final model will be saved in folder models/inference_graph</br>
+To use the model, edit file Python 
 
 
 </p>
@@ -334,6 +335,11 @@ Photo | Target | Output | Result
 Here is graphs
 
 ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/GraphIngredientDetection.PNG)
+
+* Mobile App: It is unfinish. Now, it can capture photo and recognize food, then show food information. Here is some screenshots </br>
+
+![]()
+![]()
 
 </p>
 
