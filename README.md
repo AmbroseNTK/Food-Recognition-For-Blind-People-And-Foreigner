@@ -338,8 +338,9 @@ Here is graphs
 
 * Mobile App: It is unfinish. Now, it can capture photo and recognize food, then show food information. Here is some screenshots </br>
 
-![]()
-![]()
+
+![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/Screenshot_20180804-174258.png) | ![](https://github.com/AmbroseNTK/Food-Recognition-For-Blind-People-And-Foreigner/blob/master/img/Screenshot_20180804-174435.png)
+--- | ---
 
 </p>
 
