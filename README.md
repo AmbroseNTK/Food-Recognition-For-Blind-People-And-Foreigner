@@ -301,8 +301,16 @@ python export_inference_graph.py --input_type image_tensor --pipeline_config_pat
 ```
 
 Your final model will be saved in folder models/inference_graph</br>
-To use the model, edit file Python 
+To use the model, edit file Python models/object_detection/Object_detection_image.py at lines
 
+* line 34: IMAGE_NAME = '<INPUT_DIRECTORY>'
+* line 50: NUM_CLASSES = <NUMBER_OF_INGREDIENTS>
+
+Save and run it
+
+```batch
+python Object_detection_image.py
+```
 
 </p>
 
