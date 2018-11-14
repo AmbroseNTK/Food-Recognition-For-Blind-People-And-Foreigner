@@ -25,7 +25,7 @@ Content
 </h2>
 <p>
 
-Welcome to my MLC GitHub page. My name is ***Kiet Nguyen Tuan (Ambrose)*** . I worte these lines when I was a senior student at ***Hoasen University, Vietnam***. Because of special love with Machine Learning, so I have come to this ML Camp hosted at Jeju National University to do my project. I also want to meet new friends from other countries. It was a experiement I never forget.
+Welcome to my MLC GitHub page. My name is ***Kiet Nguyen Tuan (Ambrose)*** . I wrote these lines when I was a senior student at ***Hoasen University, Vietnam***. Because of special love with Machine Learning, so I have come to this ML Camp hosted at Jeju National University to do my project. I also want to meet new friends from other countries. It was a experiement I never forget.
 </p>
 
 <h2>
